@@ -21,6 +21,7 @@ import contactsReducer from '../redux/contacts/contacts-reducer';
 const persistConfig = {
   key: 'contacts',
   storage,
+  blacklist: ['filter'],
 };
 
 const rootReducer = combineReducers({
